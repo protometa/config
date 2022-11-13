@@ -1,0 +1,15 @@
+theme = "monokai"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[keys.normal]
+"}" = "goto_next_paragraph"
+"{" = "goto_prev_paragraph"
+C-s = ":w"
+
+[keys.insert]
+k = { j = "normal_mode" }
+C-s = ":w"
