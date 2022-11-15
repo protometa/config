@@ -1,0 +1,110 @@
+
+"namespace" = "light_green"
+"module" = "light_green"
+
+"type" = "light_green"
+"type.builtin" = "light_blue"
+"type.enum.variant" = "white" 
+"constructor" = "light_green"
+"variable.other.member" = "white"
+
+"keyword" = "fuchsia"
+"keyword.directive" = "fuchsia"
+"keyword.control" = "fuchsia"
+"keyword.storage.type" = "light_blue"
+"label" = "fuchsia"
+tag = "fuchsia"
+
+"operator" = "white"
+
+"punctuation" = "white"
+"punctuation.delimiter" = "white"
+
+"variable" = "white"
+"variable.parameter" = "orange"
+"variable.builtin" = "fuchsia"
+"constant" = "white"
+"constant.builtin" = "purple"
+
+"function" = "light_green"
+"function.builtin" = "light_green"
+"function.macro" = "fuchsia"
+"attribute" = "light_green"
+
+"comment" = "grey"
+"ui.virtual.whitespace" = "grey"
+"ui.virtual.ruler" = { bg = "light_charcoal" }
+
+"string" = "yellow"
+"constant.character" = "yellow"
+"string.regexp" = "orange"
+"constant.numeric" = "purple"
+"constant.character.escape" = "purple"
+
+# TODO
+"markup.heading" = "blue"
+"markup.list" = "red"
+"markup.bold" = { fg = "yellow", modifiers = ["bold"] }
+"markup.italic" = { fg = "magenta", modifiers = ["italic"] }
+"markup.link.url" = { fg = "yellow", modifiers = ["underlined"] }
+"markup.link.text" = "red"
+"markup.quote" = "cyan"
+"markup.raw" = "light_green"
+
+"diff.plus" = "light_green"
+"diff.delta" = "yellow"
+"diff.minus" = "fuchsia"
+
+"ui.background" = { fg = "white", bg = "charcoal" }
+
+"ui.window" = "light_charcoal"
+"ui.popup" = { bg = "light_charcoal" }
+"ui.help" = { bg = "light_charcoal" }
+"ui.menu" = { bg = "light_charcoal" }
+"ui.menu.selected" = { fg = "white", bg = "charcoal", modifiers = ["bold"] }
+
+"ui.cursor" = { fg = "fire", modifiers = ["reversed"] }
+"ui.cursor.match" = "fire"
+
+"ui.selection" = { bg = "dark_grey" }
+"ui.selection.primary" = { bg = "darker_grey" }
+
+"ui.linenr" = "dark_grey"
+"ui.linenr.selected" = "light_grey"
+
+"ui.cursorline" = { bg = "dark_charcoal" }
+"ui.statusline" = { bg = "dark_grey" }
+"ui.statusline.inactive" = { bg = "darker_grey" }
+"ui.statusline.insert" = { bg = "light_green" }
+"ui.statusline.select" = { bg = "grey" }
+
+"ui.text" = "white"
+"ui.text.focus" = { modifiers = ["reversed"] }
+
+"warning" = "orange"
+"error" = "red"
+"info" = "off_white"
+"hint" = "grey"
+
+diagnostic = { modifiers = ["underlined"] }
+
+[palette]
+
+fuchsia = "#FC1A70"
+fire = "#E33C22"
+orange = "#FF9700"
+yellow = "#FFFF87"
+light_green = "#A4E400"
+light_blue = "#62D8F1"
+purple = "#AF87FF"
+
+white = "#FFFFFF"
+off_white = "#CCCCCC"
+light_grey = "#BCBCBC"
+grey = "#8A8A8A"
+dark_grey = "#5F5F5F"
+darker_grey = "#444444"
+light_charcoal = "#2B2B2B"
+charcoal = "#262626"
+dark_charcoal = "#202020"
+black = "#000000"
