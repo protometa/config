@@ -32,7 +32,7 @@ tag = "fuchsia"
 "attribute" = "light_green"
 
 "comment" = "grey"
-"ui.virtual.whitespace" = "grey"
+"ui.virtual.whitespace" = "charcoal"
 "ui.virtual.ruler" = { bg = "light_charcoal" }
 
 "string" = "yellow"
