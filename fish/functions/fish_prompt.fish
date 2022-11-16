@@ -44,6 +44,14 @@ function fish_prompt --description 'Write out the prompt'
         set suffix '$'
     end
 
+    # non-zero exit code
+    set -l status_color (set_color $fish_color_status)
+    set -l statusb_color (set_color --bold $fish_color_status)
+    set -l prompt_status (__fish_print_pipestatus "[" "]" "|" "$status_color" "$statusb_color" $last_pipestatus)
+    if [ -n "$prompt_status" ]
+      echo -n "$prompt_status "
+    end
+
     # PWD
     set_color $color_cwd
     echo -n (prompt_pwd)
@@ -51,10 +59,6 @@ function fish_prompt --description 'Write out the prompt'
 
     printf '%s ' (fish_vcs_prompt)
 
-    set -l status_color (set_color $fish_color_status)
-    set -l statusb_color (set_color --bold $fish_color_status)
-    set -l prompt_status (__fish_print_pipestatus "[" "]" "|" "$status_color" "$statusb_color" $last_pipestatus)
-    echo -n $prompt_status
     set_color normal
 
     echo -n "$suffix "
