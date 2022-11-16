@@ -32,7 +32,7 @@ tag = "fuchsia"
 "attribute" = "light_green"
 
 "comment" = "grey"
-"ui.virtual.whitespace" = "charcoal"
+"ui.virtual.whitespace" = "fire" # TODO bug in helix that causes cursor over whitespace to not be themed to it's correct color
 "ui.virtual.ruler" = { bg = "light_charcoal" }
 
 "string" = "yellow"

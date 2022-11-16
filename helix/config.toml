@@ -11,10 +11,10 @@ shell = ["fish", "-c"]
 insert = "bar"
 normal = "block"
 
-[editor.whitespace.render]
-space = "all"
-tab = "all"
-newline = "none"
+# [editor.whitespace.render]
+# space = "all"
+# tab = "all"
+# newline = "none"
 
 [keys.normal]
 "}" = "goto_next_paragraph"
