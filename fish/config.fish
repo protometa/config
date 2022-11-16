@@ -10,8 +10,3 @@ if status is-interactive
 
     set -x JAVA_HOME "/Users/LNimtz/Library/Caches/Coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_mac_hotspot_8u292b10.tar.gz/jdk8u292-b10/Contents/Home"
 end
-
-# Set the cursor shapes for the different vi modes.
-set fish_cursor_default     block
-set fish_cursor_insert      line
-set fish_cursor_visual      underscore
