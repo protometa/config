@@ -4,7 +4,7 @@ theme = "monokai_tasty"
 [editor]
 color-modes = true
 cursorline = true
-completion-trigger-len = 0
+completion-trigger-len = 1
 shell = ["fish", "-c"]
 
 [editor.cursor-shape]
