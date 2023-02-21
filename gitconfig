@@ -1,0 +1,30 @@
+[core]
+    excludesfile = ~/.gitignore
+    pager = diff-so-fancy | less --tabs=4 -RFX
+[user]
+    name = Luke Nimtz
+    email = luke.nimtz@gmail.com
+[push]
+    default = simple
+[alias]
+    co = checkout
+    br = branch
+    ci = commit -v
+    st = status -sb
+    unadd = restore --staged --
+    lg = log --graph --decorate --format='%C(auto) %h %d %an %cr%n    %s%n' --date-order
+    lgf = !git lg --first-parent
+    df = "!git diff --histogram -w $@ -- ':!package-lock.json' #"
+[filter "lfs"]
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true
+[interactive]
+    diffFilter = diff-so-fancy --patch
+[diff-so-fancy]
+    stripLeadingSymbols = false
+    markEmptyLines = false
+[pull]
+	ff = only
+[init]
+	defaultBranch = main
