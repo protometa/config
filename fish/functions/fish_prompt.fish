@@ -52,8 +52,7 @@ function fish_prompt --description 'Write out the prompt'
       echo -n "$prompt_status "
     end
 
-    if test (whoami) != lukenimtz
-      and test (whoami) != luke
+    if string match -ri --invert 'luke|nimtz|protometa' (whoami)
       or set -q SSH_TTY
       echo -n "$(prompt_login):"
     end
