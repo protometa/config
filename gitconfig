@@ -14,7 +14,7 @@
     unadd = restore --staged --
     lg = log --graph --decorate --format='%C(auto) %h %d %an %cr%n    %s%n' --date-order
     lgf = !git lg --first-parent
-    df = "!git diff --histogram -w $@ -- ':!package-lock.json' #"
+    df = "!git diff --histogram -w $@ -- $((cat .diffignore || cat ~/.diffignore) | xargs printf ':!%s ') #"
 [filter "lfs"]
     clean = git-lfs clean %f
     smudge = git-lfs smudge %f
