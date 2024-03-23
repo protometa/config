@@ -21,9 +21,17 @@ normal = "block"
 # newline = "none"
 
 [keys.normal]
-"}" = "goto_next_paragraph"
-"{" = "goto_prev_paragraph"
 C-s = ":w"
+J = "goto_next_paragraph"
+K = "goto_prev_paragraph"
+C-j = "join_selections"
+C-k = "keep_selections"
+
+[keys.normal.space]
+g = ":pipe sgpt --code" # replace selection with code via gtp
+c = ":pipe pval" # use pval command to evaluate and replace selection
+
+[keys.select]
 J = "goto_next_paragraph"
 K = "goto_prev_paragraph"
 C-j = "join_selections"
