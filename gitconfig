@@ -16,7 +16,7 @@
     lga = !git lg --all
     lgp = "!git log --patch --decorate $@ -- . $(cat .diffignore ~/.diffignore | xargs printf ':!%s ') #"
     lgf = !git lg --first-parent
-    df = "!git diff --histogram -w $@ -- $(cat .diffignore ~/.diffignore | xargs printf ':!%s ') #"
+    df = "!git diff --histogram -w $@ -- $(cat .diffignore ~/.diffignore | xargs -r printf ':!%s ') #"
 [filter "lfs"]
     clean = git-lfs clean %f
     smudge = git-lfs smudge %f
